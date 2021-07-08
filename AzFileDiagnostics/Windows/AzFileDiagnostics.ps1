@@ -1178,7 +1178,7 @@ function MapDrive ($FileSharePath) {
     if ($drives -ne $null) {
         foreach ($drive in $drives) {
             if ($drive.ProviderName -eq $filesharepath) {
-                Write-Log -level warning "`n[WARNING]: there is already an existing mapped drive to $filesharepath in admin session. if you cannot see the mapped drive in non-admin sessoin, please refer to https://technet.microsoft.com/library/ee844140.aspx on how to fix it"
+                Write-Log -level warning "`n[WARNING]: there is already an existing mapped drive to $filesharepath in admin session. if you cannot see the mapped drive in non-admin session, please refer to https://technet.microsoft.com/library/ee844140.aspx on how to fix it"
                 return 
             }
         }
